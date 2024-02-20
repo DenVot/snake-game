@@ -16,8 +16,8 @@ public class Apple implements GameObject {
     this.width = width;
     this.height = height;
 
-    pos = new Vector(Math.min(POLE_SIZE - CELL_SIZE, Math.max(0, random.nextInt(0, gamePoleWidth / width) * width)),
-            Math.min(POLE_SIZE - CELL_SIZE, Math.max(0, random.nextInt(0, gamePoleHeight / height) * height)));
+    pos = new Vector(Math.min(POLE_SIZE - CELL_SIZE, Math.max(0, random.nextInt(1, (gamePoleWidth / width) - 1) * width)),
+            Math.min(POLE_SIZE - CELL_SIZE, Math.max(0, random.nextInt(1, (gamePoleWidth / width) - 1) * width)));
   }
 
   @Override
